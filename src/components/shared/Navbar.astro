@@ -1,0 +1,33 @@
+---
+
+    interface MenuItem {
+        label: string;
+        link: string;
+    }
+
+    const menuItems: MenuItem[] = [
+        {
+            label: 'Home',
+            link: 'home',
+        },
+        {
+            label: 'About',
+            link: 'about',
+        },
+    ]
+
+---
+<nav class="bg-light-purple p-1 flex justify-evenly items-center w-full">
+    <!--Logo -->
+    <div>
+        <img src="/images/avatar-logo.png" class="w-[100px] h-[100px]"/>
+    </div>
+
+    <!-- Nav items  -->
+    <ul class="flex items-center gap-40 gr-purple ">
+        {menuItems.map( item => {
+            return <li class="nav-font" key={item.link}>{item.label}</li>;
+        } )}
+    </ul>
+
+</nav>
