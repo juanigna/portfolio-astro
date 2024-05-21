@@ -1,3 +1,39 @@
 ---
-$END$
+const { title, description } = Astro.props;
 ---
+
+
+<div class="card py-2 px-10 mx-6  gap-2 w-full card-gradient flex items-center rounded-[15px]">
+    <img src="/images/projectImg.png" />
+    <div class="flex flex-col">
+        <h3 class="poppins-semibold">{ title }</h3>
+        <p class="poppins-medium ">{description}</p>
+    </div>
+</div>
+
+
+<style>
+    .card-gradient {
+        background: rgb(19,4,40);
+        background: linear-gradient(90deg, rgba(19,4,40,1) 7%, rgba(37,16,67,1) 34%, rgba(56,18,109,1) 57%, rgba(38,16,69,1) 85%, rgba(25,6,52,1) 100%);
+    }
+
+    .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 26px;
+    }
+
+    .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 8px;
+    }
+    .card {
+
+        height: 190px;
+    }
+
+</style>

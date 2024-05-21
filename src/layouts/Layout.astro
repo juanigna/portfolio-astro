@@ -18,11 +18,17 @@ const { title } = Astro.props;
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
 	<body class="bg-dark-purple">
 		<Navbar />
-		<div class="max-w-[1200px] mx-auto">
+		<div class="max-w-[800px] mx-auto">
 			<slot />
 		</div>
 	</body>
@@ -58,7 +64,7 @@ const { title } = Astro.props;
 	}
 
 	.gr-purple{
-		-webkit-filter: drop-shadow(0px 0px 90px rgba(80, 23, 212, 1));
+		-webkit-filter: drop-shadow(0px 0px 50px rgba(80, 23, 212, 1));
 		background-color: transparent;
 		backface-visibility: hidden;
 	}
@@ -68,5 +74,35 @@ const { title } = Astro.props;
 		font-weight: 300;
 		font-size: 20px;
 	}
+
+	.main-font-1 {
+		font-family: "Preahvihear", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 50px;
+	}
+	.main-font-2 {
+		font-family: "Preahvihear", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 40px;
+	}
+
+	.main-font-3 {
+		font-family: "Preahvihear", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 17px;
+	}
+
+
+
+	.main-font-4 {
+		font-family: "Preahvihear", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 13px;
+	}
+
 
 </style>

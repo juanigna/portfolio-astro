@@ -1,17 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from "../components/Hero/Hero.astro";
+import Experience from "../components/Experience/Experience.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="min-h-screen w-full">
-	<!-- Hero -->
-	<section class="mt-[150px] flex gap-10 items-center">
-		<img src="/images/avatar.png" class=" gr-purple"/>
-		<div>
-			<p>A designer who </p>
-			<p class="text-[50px] max-w-[350px]">Judges a book by its <span class="text-text-purple">cover</span></p>
-			<p>Because if the cover does not impress you what else can?</p>
-		</div>
-	</section>
-	</main>
+    <main class="min-h-screen w-full">
+        <!-- Hero -->
+        <Hero/>
+
+        <!-- Experience	-->
+
+        <Experience/>
+    </main>
 </Layout>
+
+

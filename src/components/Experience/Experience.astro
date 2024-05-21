@@ -1,3 +1,41 @@
 ---
-$END$
+
+import ExperienceCard from "./Card/ExperienceCard.astro";
+
+const experienceList = [
+    {
+        title: 'Sphere One',
+        description: 'Fullstack and Blockchain Developer, building an cripto wallet'
+    },
+    {
+        title: 'Ewol Academy',
+        description: 'Blockchain developer'
+    },
+    {
+        title: 'Xcapit',
+        description: 'Fullstack Developer'
+    }
+]
+
 ---
+
+<section class="mt-14 w-full relative overflow-hidden z-40">
+    <img src="/images/gradient-project.png" class="absolute -z-10 right-32"/>
+    <h2 class="main-font-2 mb-10">Work Experience</h2>
+    <div class=" grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2 gap-5 justify-items-center">
+        {
+            experienceList.map( ex => {
+
+                return <ExperienceCard title={ex.title} description={ex.description}/>
+
+            })
+        }
+    </div>
+</section>
+
+<style>
+    .bg-radial{
+        background: rgb(118,60,172);
+        background: radial-gradient(circle, rgba(118,60,172,1) 0%, rgba(50,15,133,0.5008054247089461) 320F85%);
+    }
+</style>
